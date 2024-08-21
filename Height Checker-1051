@@ -1,0 +1,14 @@
+  class Solution {
+    fun heightChecker(heights: IntArray): Int {
+    var expectedArray =heights.sortedArray()
+    var count =0
+    
+    for(i in heights.indices)
+    {
+       if(heights[i]!=expectedArray[i]){
+           count+=1
+       }
+    }
+    return count
+    }
+}
