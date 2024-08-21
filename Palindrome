@@ -1,0 +1,12 @@
+fun isPalindrome(x: Int): Boolean { var oldNumber =x
+    var newNumber = 0
+    if(x<0){
+        return false
+    }
+    do {
+        newNumber =oldNumber%10+newNumber*10
+        oldNumber /= 10    } while(oldNumber>0)
+
+    return newNumber==x
+}
+isPalindrome(121)
